@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook para vulcanos 🖖</title>
+	    <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+	    <script type="text/javascript" src="script.js"></script> 
+</head>
+<body>
+
+<header class="cabecalho">
+        <h1>Facebook</h1>
+  <link rel="shortcut icon" href="favicon.ico" />
+        <article class="entrar">
+            <div>
+                <label for="email-entrar">Email</label><br>
+                <input type="email" name="email-entrar" id="email-entrar" placeholder="Email Aqui" autofocus>
+            <br>
+            </div>
+            <div>
+                <label for="senha-entrar">Senha</label><br>
+                <input type="password" name="senha-entrar" id="senha-entrar" placeholder="Sua senha aqui"><br>
+            </div><br>
+            <input type="button" value="entrar" id="btn-entrar" onclick="popalertentrar()">
+            <div id="pop-alert-entrar" class="pop-alert"></div>
+        </article>
+    </header>
+    <main>
+        <aside class="descricao-background">
+            <p>
+                O Facebook ajuda você a encontrar outros vulcanos.
+            </p>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt="Mundo com muitas pessoas se conectando através do facebook">
+        </aside>
+        <section class="cadrastar">
+            <h3>Abra uma conta</h3>
+            <h4>É rápido e fácil.</h4>
+            <form method="POST">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"><br>
+                <input type="email" name="email" id="email" placeholder="Email"><br>
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <br>
+                <label>Data de Nascimento</label><br>
+                <input type="number" name="dia" id="" class="numero-nasc" placeholder="Dia">/
+                <input type="number" name="mes" id="" class="numero-nasc" placeholder="Mês">/
+                <input type="number" name="ano" id="" class="numero-nasc" placeholder="Ano">
+                <br>
+                <label for="genero" style="margin-top: 5px; display: block;">Gênero</label> <br>
+                <input type="radio" name="gen" id="fem">
+                <label for="fem">Feminino</label>
+                <input type="radio" name="gen" id="masc">
+                <label for="masc">Masculino</label>
+
+                <p class="termos">Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+
+                <input type="button" value="Cadastre-se" class="btn-cadastrar" onclick="popalertcadastrar()">
+
+                <p>Criar uma Página para uma celebridade, banda ou empresa.</p>
+                <div id="pop-alert-cadastrar" class="pop-alert"></div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">Facebook &copy; 2020</footer>
+</body>
+</html>
